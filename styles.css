@@ -1,0 +1,291 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Rubik", sans-serif;
+  --third-family: "Nunito", sans-serif;
+  --font3: "Manrope", sans-serif;
+  --font4: "Roboto", sans-serif;
+}
+
+/* ================ СБРОС СТАНДАРТНЫХ СТИЛЕЙ ================ */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none; /*точки*/
+}
+
+.link {
+  text-decoration: none; /*подчёркивание*/
+}
+
+body {
+  background-color: #cccccc;
+}
+/* .container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 96px;
+  padding-top: 96px;
+} */
+/* ================ /СБРОС СТАНДАРТНЫХ СТИЛЕЙ ================ */
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+/* ================================================================== */
+/* @media screen and (max-width: 428px) {
+  .header {
+    background-color: red;
+  }
+} */
+
+/* ============= HEADER =============  */
+
+.header_menu {
+  padding: 5px;
+  background-color: rgb(243, 146, 252);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding-bottom: 15px;
+}
+
+.header_button {
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 2px 12px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+/* ============= /HEADER =============  */
+
+/* ============= HERO =============  */
+.hero_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+.hero_description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #696687;
+  margin-bottom: 15px;
+}
+
+.hero_button {
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 12px 22px;
+  margin-bottom: 15px;
+}
+
+/* ============= /HERO =============  */
+
+/* ============= STATISTICS =============  */
+
+.statistics_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.statistics_count {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 85%;
+  letter-spacing: -0.04em;
+  color: #0f110f;
+  margin-bottom: 5px;
+}
+
+.statistics_description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #696687;
+}
+
+.statistics_cards_item {
+  border-radius: 20px 0 20px 0;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.statistics_cards_img {
+  margin-bottom: 10px;
+}
+
+.statistics_cards_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  color: #3b3663;
+  margin-bottom: 10px;
+}
+.statistics_cards_description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #696687;
+}
+
+.statistics_logo_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* ============= /STATISTICS =============  */
+
+/* ============= INVEST =============  */
+
+.invest_page {
+  background-color: #0f110f;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.invest_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.invest_list {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #bec9d2;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.invest_description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #bec9d2;
+  margin-bottom: 15px;
+}
+
+.invest_button {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0f110f;
+  border-radius: 25px;
+  padding: 12px 22px;
+  margin-bottom: 15px;
+}
+.invest_img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* ============= /INVEST =============  */
+
+/* ============= OPTIMIZATION =============  */
+
+.optimization_page {
+  height: 180px;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 128, 160, 0.5) 10%,
+    rgba(73, 184, 212, 0.49) 80%
+  );
+  position: relative;
+}
+
+.optimization_content {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  color: #fff;
+}
+.optimization_social {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.optimization_content {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.optimization_social {
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 80px;
+}
+
+.optimization_img {
+  position: absolute;
+  z-index: 2;
+}
+
+/* ============= /OPTIMIZATION =============  */

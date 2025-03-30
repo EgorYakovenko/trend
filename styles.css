@@ -292,13 +292,42 @@ body {
 
 /* ============= EXPERIENCE =============  */
 
-/* .experience_page {
-  
+.experience_page {
+  position: relative;
+}
+.experience_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #0f110f;
+}
+
+.experience_description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #696687;
+}
+
+/* .experience_img_box {
+  position: relative;
 } */
 
 .experience_smimg {
-  right: 10px;
-  top: 120px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+  /* right: 10px;
+  top: 120px; */
+}
+.experience_ideas {
+  position: absolute;
+  width: 180px;
+  top: 15px;
+  left: 120px;
+  z-index: 1;
 }
 
 /* .experience_description {

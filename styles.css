@@ -284,8 +284,12 @@ body {
 }
 
 .optimization_img {
+  width: 320px;
   position: absolute;
   z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ============= /OPTIMIZATION =============  */
@@ -301,6 +305,8 @@ body {
   font-size: 32px;
   line-height: 100%;
   color: #0f110f;
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .experience_description {
@@ -309,6 +315,7 @@ body {
   font-size: 12px;
   line-height: 150%;
   color: #696687;
+  padding-bottom: 15px;
 }
 
 /* .experience_img_box {
@@ -324,9 +331,9 @@ body {
 }
 .experience_ideas {
   position: absolute;
-  width: 180px;
-  top: 15px;
-  left: 120px;
+  width: 160px;
+  top: 40px;
+  left: 160px;
   z-index: 1;
 }
 
@@ -334,3 +341,35 @@ body {
 
 } */
 /* ============= /EXPERIENCE =============  */
+
+/* ============= PEOPLE =============  */
+.people_title1 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 214%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0f110f;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.people_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: #0f110f;
+  margin-bottom: 15px;
+}
+.people_description {
+  font-family: var(--font4);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #696687;
+  margin-top: 15px;
+}
+/* ============= /PEOPLE =============  */
